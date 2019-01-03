@@ -1,0 +1,32 @@
+{
+  "name": "mongosheets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibbly/mongosheets.git"
+  },
+  "author": "Angel R. Perez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fibbly/mongosheets/issues"
+  },
+  "homepage": "https://github.com/fibbly/mongosheets#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "mongodb": "^3.1.10",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.5.5",
+    "nodemon": "^1.18.9"
+  }
+}
