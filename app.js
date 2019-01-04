@@ -28,7 +28,7 @@ app.use(cors())
 
 MongoClient.connect(process.env.DB_URI, {useNewUrlParser: true}, (err, client) => {
     if(err) throw err
-    db = client.db(process.env.DB)
+    db = client.db(process.env.DB_NAME)
     app.use('/', require('./routes/index')(db))
     app.listen(port, () => {
         console.log(`Listening on port ${port}`)
