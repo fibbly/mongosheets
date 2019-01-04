@@ -14,6 +14,17 @@ module.exports = (db) => {
         })
     })
 
+    // Get All Contents of a Collection
+    router.get('/:name', (req, res) => {
+        db.collection(req.params.name).find({}).toArray((err, results) => {
+            if(err) {
+                return res.json(err)
+            }else {
+                res.json(results)
+            }
+        })
+    })
+
     // Create New Collection
     router.post('/', [
         check('collectionName').isAlphanumeric()
