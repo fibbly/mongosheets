@@ -12,6 +12,10 @@ module.exports = (db) => {
         })
     })
 
+    router.get('/hello', (req, res) => {
+        res.json({message: 'hello world'})
+    })
+
     return router
 
 }
